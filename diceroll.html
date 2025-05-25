@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+       <div class="container">
+        <h1 class="heading">DICE ROLLER</h1>
+        <img src="one.png" class="dice" id="dice-img" />
+        <button class="btn-roll" onclick="rollDice()">Roll Dice</button>
+     </div>
+     <div class="name">
+        <h3>Powered by</h3>
+        <h2>Gayatri Patil</h2>
+     </div>
+    
+    <script>
+        function rollDice() {
+            const min = 1;
+            const max = 6;
+            const random = Math.floor(Math.random() * (max - min + 1)) + min;
+            const diceimg = document.getElementById("dice-img");
+
+            if (random == 1) {
+                diceimg.src = "one.png";
+            }
+            else if (random == 2) {
+                diceimg.src = "two.png";
+            }
+            else if (random == 3) {
+                diceimg.src = "three.png";
+            }
+            else if (random == 4) {
+                diceimg.src = "four.png";
+            }
+            else if (random == 5) {
+                diceimg.src = "five.png";
+            }
+            else if (random == 6) {
+                diceimg.src = "sixx.png";
+            }
+        }
+
+    </script>
+</body>
+</html>
