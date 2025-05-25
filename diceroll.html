@@ -4,18 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+         .heading {
+            text-align:center;
+         }
+         .dice {
+            display:block;
+            margin:20px auto;
+         }
+         .btn-roll {
+            display:block;
+            margin: auto;
+            padding:10px;
+            background-color:black;
+            color:white;
+            border-radius:15px;
+         }
+         .name {
+            text-align:center;
+         }
+         .main-card {
+            border:2px double black;
+            height:420px;
+            width:400px;
+            display:block;
+            margin:20px auto;
+         }
+         
+    </style>
 </head>
 
 <body>
-
-       <div class="container">
-        <h1 class="heading">DICE ROLLER</h1>
-        <img src="one.png" class="dice" id="dice-img" />
+         <div class="main-card">
+         <h1 class="heading">DICE ROLLER</h1>
+        <img src="one.png" class="dice" id="dice-img" /><br />
         <button class="btn-roll" onclick="rollDice()">Roll Dice</button>
-     </div>
+        </div>
      <div class="name">
-        <h3>Powered by</h3>
-        <h2>Gayatri Patil</h2>
+        <h3>Created by</h3>
+        <h2>Harshita Jethani</h2>
      </div>
     
     <script>
